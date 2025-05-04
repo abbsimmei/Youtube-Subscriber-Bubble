@@ -1,0 +1,64 @@
+
+
+
+(Remake the data so Swinceball is in the middle!!!)
+
+Hello, and welcome to this quick Gephi tutorial.
+
+I assume you have already read through the read.me file and generated data or are willing to use my data already used. So hopefully you have some edge and node files in generated files. 
+
+I will start with showing how the star graph works. When you enter gephi it looks like this. In the overview it will show your graph and in data laboratory you can see all the data. 
+If we go to data laboratory and import first the node file. Make sure to choose append to existing workspace. 
+
+Next up load in the edge data, the same way. And remeber to append to existing workspace. 
+
+
+We can now see our graph if we go back to Overview, though it's quite ugly at the moment. We start by assigning colour to the nodes and edges, making the graph a bit more easy to read.
+We can also turn on names here in the bottom. 
+
+A part of the data is size, we can use this to rank the size of each node, this way we can see that Swinceball is the biggest. 
+
+Next up it's time to organize the data. Down here in layout we can run several different algorithems to spread out the data. The first we will run is ForceAtlas 2.
+This algorithem pulls on each edge, and the thinkness of each edge is how hard they pull. We turn on stronger gravity, dissuaded hubs, linlog mode, and prevent overlap.
+Then by adjusting the scaling we finally get something nice. As we can see the strongest connections are closest to the center. 
+
+We then run the fruchterman-reingold algorithem, which even if it's built for larger types of graphs gives us a nice layout which almost looks like an atom structure.
+Finally we can run the label adjust and adjust some labels ourselves. 
+
+When we now want to create an image of this graph we have just created we go into Preview. Now it's just to change settings until you get something you like.
+
+This type of star graph you can also use for the ratio graph.
+
+
+
+
+Next up I will show how to run a complete graph. This is a bit more complicated.
+
+First of all, after importing everything, we will run two statistics, which we will then use to create groupings in the graph. 
+The ones we will run are avg. Weighted Degree and Modularity, which is the part that identifies groupings.
+
+We can now colour the nodes after the modularity class. You can change colours if you don't like those who are here. Now on the side we can see the percentage,
+If one is increadibly small we need to check if it's a node that has no connection. If that is I advise to simply find it in data laborary and removing it, the rerun the modularity statistic.
+This way we don't have any classes who are all alone.
+
+Once again we can size them after our weigthed degree this time, though if you want you can also use the size imported straight from the data. 
+
+We are now going to run the force atlas 2. We turn on approximate repulsion, stronger gravity and all these three. We can now run and try out if it's to small or big.
+By changing the scale and gravity we can get something that looks nice. 
+
+Once we have that we can see that all the different classes are quite mixed together. So what we want to do is run the force atlas on each class itself. 
+
+What we therefore do is we go into filters, then find modularity class, which is in Attributes, Partition and then we can find it here.
+
+We can now filter after each class and run the force atlas on each of them. 
+
+After having run each of them we drag them each so they aren't all on each other. We can now rerun the forceAtlas. 
+Some might get jumbled together though and we can always go into the filter, drag them closer and rerun it. 
+
+So now finally it's just time to make the graph look nice, and then we are about done.
+
+//////"Analyze the Graph."
+
+
+
+
