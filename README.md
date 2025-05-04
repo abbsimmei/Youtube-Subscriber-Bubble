@@ -78,7 +78,7 @@ The OAuth 2.0 Client IDs should be renamed to secret.json and be put in the same
 
 ## How to use the program
 
-This project already includes a lot of prefetched data from the @Swinceball channel. If you want to fetch your own data I advise removing all .json and .csv files in the storage folder and it's sub folders. You can also remove the pre-generated GephiFiles in generatedGephiFiles/
+This project already includes a lot of prefetched data from the [Swinceball](https://www.youtube.com/@SwinceBall) channel. If you want to fetch your own data I advise removing all .json and .csv files in the storage folder and it's sub folders. You can also remove the pre-generated GephiFiles in generatedGephiFiles/
 
 ### Steps to fetch data
 
