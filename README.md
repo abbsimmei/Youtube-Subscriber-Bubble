@@ -1,5 +1,5 @@
 
-# Youtube Shared Subscriber Bubbles
+# Youtube Co-Subscriber Bubbles
 
 This is a program to generate three different types of graphs of shared subscribers with other youtubers. The intended users of the program are YouTubers themselves, not viewers. 
 
